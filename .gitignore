@@ -1,0 +1,12 @@
+/dist/
+/artifacts/
+**/settings.json
+**/probe-result.txt
+*.exe
+*.exe.config
+*.pdb
+*.zip
+.vs/
+.vscode/
+Thumbs.db
+Desktop.ini
