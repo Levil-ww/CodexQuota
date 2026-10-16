@@ -7,7 +7,8 @@ $files = @(
     (Join-Path $PSScriptRoot 'dist/CodexQuota.exe'),
     (Join-Path $PSScriptRoot 'dist/CodexQuota.exe.config'),
     (Join-Path $PSScriptRoot 'README.md'),
-    (Join-Path $PSScriptRoot 'LICENSE')
+    (Join-Path $PSScriptRoot 'LICENSE'),
+    (Join-Path $PSScriptRoot 'docs')
 )
 Compress-Archive -LiteralPath $files -DestinationPath $archive -Force
 $digest = (Get-FileHash -LiteralPath $archive -Algorithm SHA256).Hash.ToLowerInvariant()
